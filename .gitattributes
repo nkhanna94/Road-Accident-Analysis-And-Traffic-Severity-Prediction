@@ -1,0 +1,2 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+Data/3yearsuntouched.csv filter=lfs diff=lfs merge=lfs -text
