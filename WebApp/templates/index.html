@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severity Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        // Add event listener for form submission
+        document.getElementById("predictionForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Generate a random number between 1 and 4
+            var random_number = Math.floor(Math.random() * 4) + 1;
+
+            // Display the output container
+            document.getElementById("output").style.display = "block";
+
+            // Create and append the result element
+            var resultElement = document.createElement("p");
+            resultElement.textContent = "Random Number: " + random_number;
+            document.getElementById("output").appendChild(resultElement);
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h1 class="title">Welcome to Traffic Severity Predictor</h1>
+            <p class="subtitle">This app predicts the traffic severity to prevent road accidents. <br>Try filling the details below:</p>
+            <form action="/predict" method="post" class="prediction-form">
+                <div class="input-group">
+                    <label for="distance" class="form-label">Enter the Distance (mi)</label>
+                    <input type="text" id="distance" name="distance" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="street" class="form-label">Enter the Street No.</label>
+                    <input type="text" id="street" name="street" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="city" class="form-label">Enter the City No.</label>
+                    <input type="text" id="city" name="city" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="country" class="form-label">Enter the Country No.</label>
+                    <input type="text" id="country" name="country" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="state" class="form-label">Enter the State No.</label>
+                    <input type="text" id="state" name="state" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="temperature" class="form-label">Enter the Temperature (F)</label>
+                    <input type="text" id="temperature" name="temperature" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="wind_chill" class="form-label">Enter the Wind Chill (F)</label>
+                    <input type="text" id="wind_chill" name="wind_chill" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="visibility" class="form-label">Enter the Visibility (mi)</label>
+                    <input type="text" id="visibility" name="visibility" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="wind_direction" class="form-label">Enter the Wind Direction</label>
+                    <input type="text" id="wind_direction" name="wind_direction" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="weather_condition" class="form-label">Enter the Weather Condition</label>
+                    <input type="text" id="weather_condition" name="weather_condition" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="traffic_signal" class="form-label">Is there a Traffic Signal nearby?</label>
+                    <input type="text" id="traffic_signal" name="traffic_signal" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="sunrise_sunset" class="form-label">Accident occured at Sunrise or Sunset ? 0:1</label>
+                    <input type="text" id="sunrise_sunset" name="sunrise_sunset" class="form-input" required>
+                </div>               
+                <input type="submit" value="PREDICT SEVERITY" class="submit-button">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='car.png') }}" alt="Traffic">
+        </div>
+    </div>
+
+</body>
+</html>
 
