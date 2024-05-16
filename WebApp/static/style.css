@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat as the primary font */
+    margin: 0;
+    padding: 0;
+    background-color: #EDF2F4; /* Set background color */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: flex-start; /* Align items at the start */
+    padding: 0 10%; /* 10% padding on both sides */
+    height: 100vh;
+    text-align: center;
+}
+
+.content-box {
+    width: 60%; /* Adjusted width */
+    /* background-color: #ffffff; */
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 34px; /* Increase font size */
+    margin-top: 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 16px; /* Increase font size */
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 0.5px solid #8D99AE;
+    border-radius: 8px;
+    background-color: #2B2D42 ;
+    color: #fff;
+}
+
+.submit-button {
+    margin-top: 10px;
+    width: 104%;
+    padding: 12px;
+    background-color: #EF233C;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: auto;
+    font-size: 18px; /* Increase font size */
+    /* font-weight: bold; */
+}
+
+.image-container {
+    width: 30%;
+    position: fixed; /* Set position to fixed */
+    top: 28%; /* Adjust top position as needed */
+    right: 6%; /* Adjust right position as needed */
+    z-index: 999; /* Set a high z-index to ensure the image appears above other content */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#output {
+    display: none;
+}

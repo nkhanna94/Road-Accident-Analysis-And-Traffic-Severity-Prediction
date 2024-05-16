@@ -1,0 +1,16 @@
+*{
+    font-family: 'Poppins' ;
+    text-align: center;
+    background-color: #EDF2F4;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Poppins';
+    text-align: center;
+    color: #EF233C;
+}
+p{
+    color: #2B2D42;
+    margin-top: 10%;
+    font-size: 50px;
+}
