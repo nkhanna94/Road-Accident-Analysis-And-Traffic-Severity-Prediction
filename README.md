@@ -25,8 +25,8 @@ This project, developed during my 4th semester in college, focuses on analyzing 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/road-accident-analysis.git
-    cd road-accident-analysis
+    git clone [https://github.com/nkhanna94/Road-Accident-Analysis-And-Traffic-Severity-Prediction.git](https://github.com/nkhanna94/Road-Accident-Analysis-And-Traffic-Severity-Prediction)
+    cd Road-Accident-Analysis-And_Traffic-Severity-Prediction
     ```
 
 2. Create a virtual environment and activate it:
@@ -42,17 +42,12 @@ This project, developed during my 4th semester in college, focuses on analyzing 
 
 ## Usage
 
-1. To run the data analysis and model training script:
-    ```bash
-    python analysis_and_training.py
-    ```
-
-2. To start the web application:
+1. To start the web application:
     ```bash
     python app.py
     ```
 
-3. Navigate to `http://127.0.0.1:5000` in your web browser to use the traffic severity prediction tool.
+2. Navigate to `http://127.0.0.1:5000` in your web browser to use the traffic severity prediction tool.
 
 ## Project Structure
 
@@ -60,8 +55,8 @@ This project, developed during my 4th semester in college, focuses on analyzing 
 road-accident-analysis/
 │
 ├── data/
-│   ├── accidents.csv                # Raw data
-│   └── processed_data.csv           # Processed data for analysis
+│   ├── 3yearsuntouched.csv                # Raw data
+│   └── Cleandata.csv           # Processed data for analysis
 │
 ├── notebooks/
 │   ├── data_analysis.ipynb          # Jupyter notebook for data analysis
@@ -78,8 +73,6 @@ road-accident-analysis/
 ├── static/
 │   ├── css/
 │   │   └── styles.css               # CSS file for styling the web app
-│   └── js/
-│       └── scripts.js               # JavaScript file for web app functionality
 │
 ├── analysis_and_training.py         # Main script for running analysis and training
 ├── app.py                           # Flask app script for deployment
