@@ -106,6 +106,6 @@ Feel free to reach out if you have any questions or suggestions! Happy coding!
 
 ---
 
-**Author**: Your Name  
-**Contact**: your.email@example.com
+**Author**: Niharika Khanna  
+**Contact**: khanna.niharika09@gmail.com
 
