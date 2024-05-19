@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div>
-    <h1>Traffic Severity Prediction Result</h1>
-    <p>Traffic Severity Level is: {{ random_number }}</p>
+    <div class="container">
+        <h1>Traffic Severity Prediction Result</h1>
+        <p>Traffic Severity Level is: {{ random_number }}</p>
+        
+        <div class="tips">
+            <h2>Tips for Traffic Analysts</h2>
+            <ul class='custom-bullet'>
+                <li><strong>Monitor Traffic Patterns:</strong> Continuously observe traffic data to identify emerging trends and potential issues.</li>
+                <li><strong>Implement Real-Time Adjustments:</strong> Use real-time data to make immediate changes to traffic signal timings and reroute traffic if necessary.</li>
+                <li><strong>Utilize Predictive Analytics:</strong> Apply predictive models to foresee traffic congestion and implement proactive measures to mitigate it.</li>
+                <li><strong>Coordinate with Local Authorities:</strong> Work closely with law enforcement and emergency services to ensure a swift response to accidents and incidents.</li>
+                <li><strong>Optimize Traffic Signal Timings:</strong> Regularly adjust traffic signal timings based on traffic flow data to minimize congestion and delays.</li>
+                <li><strong>Promote Public Transportation:</strong> Encourage the use of public transportation to reduce the number of vehicles on the road, thereby easing traffic congestion.</li>
+                <li><strong>Implement Traffic Calming Measures:</strong> Use measures like speed bumps, roundabouts, and traffic signs to slow down traffic in high-risk areas.</li>
+                <li><strong>Engage in Community Outreach:</strong> Educate the public about traffic safety and the importance of following traffic laws to reduce accidents.</li>
+                <li><strong>Leverage Technology:</strong> Utilize advanced traffic management systems, cameras, and sensors to monitor and control traffic flow efficiently.</li>
+                <li><strong>Analyze Post-Incident Data:</strong> After an accident or major traffic event, analyze the data to understand the cause and implement measures to prevent future occurrences.</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
+
