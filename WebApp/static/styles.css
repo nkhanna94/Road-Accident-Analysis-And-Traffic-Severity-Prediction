@@ -9,8 +9,51 @@ h1{
     text-align: center;
     color: #EF233C;
 }
+h2{
+    color: #2B2D42;
+}
 p{
     color: #2B2D42;
-    margin-top: 10%;
+    margin-top: 6.5%;
     font-size: 50px;
+}
+
+li{
+    margin-left: 19%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+/* Add your existing styles here */
+
+.custom-bullet {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-bullet li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-bullet li::before {
+    content: '\2022'; /* Unicode for bullet point */
+    color: #1e90ff; /* Customize color */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom-bullet li:nth-child(odd)::before {
+    content: '⚙️'; /* Gear icon */
+}
+
+.custom-bullet li:nth-child(even)::before {
+    content: '🔧'; /* Wrench icon */
 }
