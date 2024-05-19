@@ -21,6 +21,11 @@ This project, developed during my 4th semester in college, focuses on analyzing 
 - **XGBoost**: For building and tuning the most accurate prediction model.
 - **Flask**: For deploying the model as a web application.
 
+
+## Access it here :
+http://niharikakhanna.pythonanywhere.com/
+
+
 ## Installation
 
 1. Clone the repository:
